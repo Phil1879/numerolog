@@ -10,6 +10,9 @@ body {
     background: #0a0e27;
     overflow-x: hidden;
 }
+.text-primary {
+    color: #c4b5fd !important;
+}
 
 /* Horizontal Menu */
 .horizontal-menu {
@@ -104,6 +107,26 @@ body {
     color: #ffffff;
     border-color: rgba(196, 181, 253, 0.6);
     box-shadow: 0 8px 25px rgba(139, 92, 246, 0.5);
+}
+/* Стили для мобильного переключателя в навбаре */
+.lang-switcher-mobile {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px 0;
+    margin-top: 10px;
+}
+
+.lang-switcher-mobile .lang-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+/* Скрыть десктопный переключатель на мобильных */
+@media (max-width: 767.98px) {
+    .lang-switcher {
+        display: none;
+    }
 }
 
 /* Flying Sparks Animation */
@@ -600,4 +623,75 @@ body {
 }
 @media (max-width: 390px) {
     .hero-title-top { font-size: 25px; }
+}
+
+/* Custom background classes */
+.bg-gradient-dark {
+    background: linear-gradient(180deg, rgba(139, 92, 246, 0.05) 0%, rgba(20, 20, 35, 0) 100%);
+}
+
+.bg-module {
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(167, 139, 250, 0.05) 100%);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(139, 92, 246, 0.3);
+}
+
+.bg-primary-soft {
+    background: rgba(139, 92, 246, 0.06);
+    backdrop-filter: blur(5px);
+}
+
+/* Sparkle effects */
+.sparkle-1 {
+    right: -100px;
+    top: -100px;
+    width: 250px;
+    height: 250px;
+    background: radial-gradient(circle, rgba(139, 92, 246, 0.2) 0%, transparent 70%);
+    border-radius: 50%;
+    filter: blur(60px);
+}
+
+.sparkle-2 {
+    left: -100px;
+    bottom: -100px;
+    width: 250px;
+    height: 250px;
+    background: radial-gradient(circle, rgba(167, 139, 250, 0.2) 0%, transparent 70%);
+    border-radius: 50%;
+    filter: blur(60px);
+}
+
+.sparkle-3 {
+    top: -50px;
+    right: -50px;
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle, rgba(139, 92, 246, 0.15) 0%, transparent 70%);
+    border-radius: 50%;
+    filter: blur(40px);
+}
+
+.sparkle-center {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(139, 92, 246, 0.15) 0%, transparent 70%);
+    border-radius: 50%;
+    filter: blur(80px);
+}
+
+/* Shadow effects */
+.shadow-glow {
+    box-shadow: 0 15px 40px rgba(139, 92, 246, 0.3);
+}
+
+/* Text colors */
+.text-primary-custom {
+    color: #c4b5fd !important;
+}
+.border-primary {
+    border-color: #c4b5fd !important;
 }
