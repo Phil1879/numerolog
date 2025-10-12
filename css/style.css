@@ -695,3 +695,140 @@ body {
 .border-primary {
     border-color: #c4b5fd !important;
 }
+/* Module effects */
+.sparkle-left-top {
+    left: -80px;
+    top: -80px;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(139, 92, 246, 0.15) 0%, transparent 70%);
+    border-radius: 50%;
+    filter: blur(40px);
+}
+
+.sparkle-right-top {
+    right: -80px;
+    top: -80px;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(167, 139, 250, 0.15) 0%, transparent 70%);
+    border-radius: 50%;
+    filter: blur(40px);
+}
+
+.sparkle-left-bottom {
+    left: -80px;
+    bottom: -80px;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(139, 92, 246, 0.15) 0%, transparent 70%);
+    border-radius: 50%;
+    filter: blur(40px);
+}
+
+.sparkle-right-bottom {
+    right: -80px;
+    bottom: -80px;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(167, 139, 250, 0.15) 0%, transparent 70%);
+    border-radius: 50%;
+    filter: blur(40px);
+}
+
+.sparkle-center {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(139, 92, 246, 0.2) 0%, transparent 70%);
+    border-radius: 50%;
+    filter: blur(60px);
+}
+
+/* Text gradients */
+.text-gradient-purple {
+    background: linear-gradient(135deg, #8b5cf6 0%, #a78bfa 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.text-gradient-purple-light {
+    background: linear-gradient(135deg, #a78bfa 0%, #c4b5fd 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Pricing effects */
+.sparkle-pricing-1 {
+    top: -50px;
+    right: -50px;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(139, 92, 246, 0.15) 0%, transparent 70%);
+    border-radius: 50%;
+    filter: blur(50px);
+}
+
+.sparkle-pricing-2 {
+    top: -50px;
+    left: -50px;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(139, 92, 246, 0.15) 0%, transparent 70%);
+    border-radius: 50%;
+    filter: blur(50px);
+}
+
+/* Author section */
+.author-glow {
+    top: -20px;
+    left: -20px;
+    right: 20px;
+    bottom: 20px;
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.3) 0%, rgba(167, 139, 250, 0.2) 100%);
+    border-radius: 30px;
+    filter: blur(30px);
+}
+
+.shadow-purple {
+    box-shadow: 0 25px 60px rgba(139, 92, 246, 0.4);
+}
+
+/* Form styles */
+.bg-dark-custom {
+    background: rgba(20, 20, 35, 0.6) !important;
+}
+
+.border-primary {
+    border-color: rgba(139, 92, 246, 0.3) !important;
+}
+
+/* Button styles */
+.btn-primary-custom {
+    background: linear-gradient(135deg, #8b5cf6 0%, #a78bfa 100%);
+    border: 2px solid rgba(167, 139, 250, 0.6);
+    color: #fff;
+    font-weight: 700;
+}
+
+.btn-primary-dark {
+    background: linear-gradient(135deg, #8b5cf6 0%, #a78bfa 100%);
+    border: 2px solid rgba(196, 181, 253, 0.8);
+    color: #fff;
+    font-weight: 700;
+}
+
+.btn-telegram {
+    background: #229ED9;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.text-primary-dark {
+    color: #8b5cf6 !important;
+}
