@@ -39,7 +39,7 @@
 
 <!-- Mobile Menu -->
 <nav class="navbar navbar-expand-md fixed-top d-md-none" style="background: rgba(13, 26, 73, 0.95); backdrop-filter: blur(20px);">
-    <div class="container-fluid">
+    <div class="container-fluid px-0">
         <a class="navbar-brand text-white" href="#" data-key="site-title">Цифровая Родология</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon text-white">☰</span>
@@ -76,31 +76,38 @@
     <button class="lang-btn" data-lang="uk">UA</button>
 </div>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero-gradient">
-        <div class="smoke-effect"></div>
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="hero-content">
-                        <h1 class="hero-title-top" data-key="hero-title">Цифровая Родология</h1>
-                        <p class="hero-subtitle-top" data-key="hero-subtitle">Раскрой Код Рода</p>
-                        <h2 class="hero-title" data-key="hero-name">Вероника Задорожная</h2>
-                        <p class="hero-subtitle" data-key="hero-description">Мастер Цифровой Родологии и трансформации судьбы</p>
-                        <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start mt-4">
-                            <a href="https://secure.wayforpay.com/button/bc36fde67749d"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="cta-button text-center">
-                                <span data-key="cta-book" class="d-block">Забронировать место — 1000 грн</span>
-                            </a>
-                            <a href="#program" class="btn btn-outline-light btn-lg rounded-pill px-4 py-3" data-key="cta-details">Подробнее</a>
-                        </div>
+<!-- Hero Section -->
+<section id="home" class="hero-gradient">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Текст - на мобиле первый -->
+            <div class="col-lg-6 order-2 order-lg-1">
+                <div class="hero-content">
+                    <h1 class="hero-title-top" data-key="hero-title">Цифровая Родология</h1>
+                    <p class="hero-subtitle-top" data-key="hero-subtitle">Раскрой Код Рода</p>
+                    <h2 class="hero-title" data-key="hero-name">Вероника Задорожная</h2>
+                    <p class="hero-subtitle" data-key="hero-description">Мастер Цифровой Родологии и трансформации судьбы</p>
+                    <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start mt-4">
+                        <a href="https://secure.wayforpay.com/button/bc36fde67749d"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="cta-button text-center">
+                            <span data-key="cta-book" class="d-block">Забронировать место — 1000 грн</span>
+                        </a>
+                        <a href="#program" class="btn btn-outline-light btn-lg rounded-pill px-4 py-3" data-key="cta-details">Подробнее</a>
                     </div>
                 </div>
             </div>
+            
+            <!-- Изображение - на мобиле второй -->
+            <div class="col-lg-6 order-1 order-lg-2">
+                <div class="hero-image text-center">
+                    <img src="img/Avtor.png" alt="Вероника Задорожная" class="img-fluid rounded-4 " style="max-height: 600px;">
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Intro Section -->
     <section class="section py-5">
@@ -131,12 +138,12 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-10">
-                    <h2 class="text-center mb-5" style="font-family: 'Playfair Display', serif; font-size: 44px; color: #c4b5fd; font-style: italic; line-height: 1.4;" data-key="signs-title">
+                    <h2 class="text-center mb-5" style="font-family: 'Playfair Display', serif; font-size: 44px; color: #c4b5fd; line-height: 1.4;" data-key="signs-title">
                         «Ты живёшь не своей жизнью, если…»
                     </h2>
                     
                     <div class="row mb-5">
-                        <div class="col-md-8 mx-auto">
+                        <div class="col-md-12 mx-auto">
                             <div class="bg-gradient-primary rounded-4 p-4" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.08) 0%, rgba(167, 139, 250, 0.05) 100%); border: 2px solid rgba(139, 92, 246, 0.3);">
                                 <ul class="list-unstyled">
                                     <li class="text-light fs-5 mb-3 ps-4 position-relative" data-key="sign-1">
@@ -225,7 +232,7 @@
 <section id="program" class="section py-5 bg-gradient-dark">
     <div class="container">
         <h2 class="section-title mb-3" data-key="program-title">ПРОГРАММА КУРСА</h2>
-        <p class="text-center fs-3 text-primary-custom mb-5" data-key="program-subtitle">
+        <p class="text-center fs-3 text-primary mb-5" data-key="program-subtitle">
             5 модулей личной трансформации
         </p>
         
@@ -237,7 +244,7 @@
                         <div class="position-absolute sparkle-left-top"></div>
                         <div class="position-relative z-3">
                             <div class="module-number display-1 fw-bold text-gradient-purple mb-3">01</div>
-                            <h3 class="module-title fw-normal text-primary-custom mb-3" data-key="module-1-title">Введение в Цифровую Родологию</h3>
+                            <h3 class="module-title fw-normal text-primary mb-3" data-key="module-1-title">Введение в Цифровую Родологию</h3>
                             <p class="text-light fs-5 mb-0" data-key="module-1-desc">Род как система и родовые коды.</p>
                         </div>
                     </div>
@@ -247,7 +254,7 @@
                         <div class="position-absolute sparkle-right-top"></div>
                         <div class="position-relative z-3">
                             <div class="module-number display-1 fw-bold text-gradient-purple-light mb-3">02</div>
-                            <h3 class="module-title fw-normal text-primary-custom mb-3" data-key="module-2-title">Родовая матрица</h3>
+                            <h3 class="module-title fw-normal text-primary mb-3" data-key="module-2-title">Родовая матрица</h3>
                             <p class="text-light fs-5 mb-0" data-key="module-2-desc">Расчет и чтение матрицы 1-9</p>
                         </div>
                     </div>
@@ -257,7 +264,7 @@
                         <div class="position-absolute sparkle-left-bottom"></div>
                         <div class="position-relative z-3">
                             <div class="module-number display-1 fw-bold text-gradient-purple mb-3">03</div>
-                            <h3 class="module-title fw-normal text-primary-custom mb-3" data-key="module-3-title">Родовые сценарии</h3>
+                            <h3 class="module-title fw-normal text-primary mb-3" data-key="module-3-title">Родовые сценарии</h3>
                             <p class="text-light fs-5 mb-0" data-key="module-3-desc">Фигура рода (мама - папа - ребенок), диагностика</p>
                         </div>
                     </div>
@@ -267,7 +274,7 @@
                         <div class="position-absolute sparkle-right-bottom"></div>
                         <div class="position-relative z-3">
                             <div class="module-number display-1 fw-bold text-gradient-purple-light mb-3">04</div>
-                            <h3 class="module-title fw-normal text-primary-custom mb-3" data-key="module-4-title">Женская и мужская линии</h3>
+                            <h3 class="module-title fw-normal text-primary mb-3" data-key="module-4-title">Женская и мужская линии</h3>
                             <p class="text-light fs-5 mb-2" data-key="module-4-desc-1">Баланс мамы и папы</p>
                             <p class="text-light fs-5 mb-0" data-key="module-4-desc-2">Внутреннее исцеление</p>
                         </div>
@@ -278,48 +285,48 @@
     <div class="position-absolute sparkle-center"></div>
     <div class="position-relative z-3">
         <div class="module-number display-1 fw-bold text-gradient-purple mb-3">05</div>
-        <h3 class="module-title fw-normal text-primary-custom mb-3" data-key="module-5-title">Родовые коды изобилия</h3>
+        <h3 class="module-title fw-normal text-primary mb-3" data-key="module-5-title">Родовые коды изобилия</h3>
         <p class="text-light fs-5 mb-0" data-key="module-5-desc">Деньги, предназначение, сила рода</p>
     </div>
 </div>
                     
                     <!-- Pro Track -->
-                    <div class="bg-module-premium rounded-4 p-4 p-md-5 mt-5">
+                    <div class="bg-module-premium rounded-4 p-0 p-md-0 mt-0">
                         <div class="text-center mb-4 mb-md-5">
-                            <span class="material-symbols-outlined display-1 text-primary-custom mb-3 d-block">school</span>
+                            <span class="material-symbols-outlined display-1 text-primary mb-3 d-block">school</span>
                             <h2 class="display-4 fw-bold text-light mb-2" data-key="pro-track-title">PRO</h2>
-                            <p class="text-primary-custom fs-3 fst-italic" data-key="pro-track-desc">Для специалистов</p>
+                            <p class="text-primary fs-3 fst-italic" data-key="pro-track-desc">Для специалистов</p>
                         </div>
                         
                         <div class="bg-module rounded-4 p-4 p-md-5 mb-4">
-                            <h3 class="text-center display-5 fw-normal text-primary-custom mb-4" data-key="pro-track-subtitle">«Практик Цифровой Родологии»</h3>
+                            <h3 class="text-center display-5 fw-normal text-primary mb-4" data-key="pro-track-subtitle">«Практик Цифровой Родологии»</h3>
                             
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="bg-primary-soft rounded-3 p-3 p-md-4 border-start border-primary border-4 h-100">
                                         <p class="text-light fs-5 mb-0">
-                                            <strong class="text-primary-custom" data-key="pro-track-item-1">Методика консультаций и этика.</strong>
+                                            <strong class="text-primary" data-key="pro-track-item-1">Методика консультаций и этика.</strong>
                                         </p>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="bg-primary-soft rounded-3 p-3 p-md-4 border-start border-primary border-4 h-100">
                                         <p class="text-light fs-5 mb-0">
-                                            <strong class="text-primary-custom" data-key="pro-track-item-2">Диагностика по цифровой родограмме.</strong>
+                                            <strong class="text-primary" data-key="pro-track-item-2">Диагностика по цифровой родограмме.</strong>
                                         </p>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="bg-primary-soft rounded-3 p-3 p-md-4 border-start border-primary border-4 h-100">
                                         <p class="text-light fs-5 mb-0">
-                                            <strong class="text-primary-custom" data-key="pro-track-item-3">Практикум: анализ 3-х реальных кейсов.</strong>
+                                            <strong class="text-primary" data-key="pro-track-item-3">Практикум: анализ 3-х реальных кейсов.</strong>
                                         </p>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="bg-primary-soft rounded-3 p-3 p-md-4 border-start border-primary border-4 h-100">
                                         <p class="text-light fs-5 mb-0">
-                                            <strong class="text-primary-custom" data-key="pro-track-item-4">Сертификация и диплом Школы Цифровой Психологии.</strong>
+                                            <strong class="text-primary" data-key="pro-track-item-4">Сертификация и диплом Школы Цифровой Психологии.</strong>
                                         </p>
                                     </div>
                                 </div>
@@ -341,7 +348,7 @@
 <section id="results" class="section py-5 bg-gradient-results">
     <div class="container">
         <h2 class="section-title mb-4" data-key="results-title">РЕЗУЛЬТАТЫ И ТРАНСФОРМАЦИИ</h2>
-        <p class="text-center fs-3 text-primary-custom fst-italic mb-5 mx-auto" style="max-width: 800px;" data-key="results-subtitle">
+        <p class="text-center fs-3 text-primary mb-5 mx-auto" style="max-width: 800px;" data-key="results-subtitle">
             После курса ты почувствуешь, что…
         </p>
         
@@ -443,7 +450,7 @@
                     </div>
                     
                     <div class="bg-module rounded-4 p-4 border border-primary border-2 mx-auto" style="max-width: 700px;">
-                        <p class="text-primary-custom fs-5 text-center mb-0 d-flex align-items-center justify-content-center gap-3">
+                        <p class="text-light fs-5 text-center mb-0 d-flex align-items-center justify-content-center gap-3">
                             <span class="material-symbols-outlined fs-3 text-primary">explore</span>
                             <span data-key="target-note"><strong>Нет базовых требований</strong> - всё с нуля, шаг за шагом.</span>
                         </p>
@@ -471,7 +478,7 @@
                                 <div class="bg-module d-inline-block rounded-4 p-4 border border-primary border-2">
                                     <p class="text-light fs-3 lh-base mb-0">
                                         <span class="hero-title display-4 fw-bold" data-key="format-duration">6 недель</span><br>
-                                        <span class="fs-5 text-primary-custom" data-key="format-duration-desc">видеоуроки + живые эфиры</span>
+                                        <span class="fs-5 text-primary" data-key="format-duration-desc">видеоуроки + живые эфиры</span>
                                     </p>
                                 </div>
                             </div>
@@ -481,7 +488,7 @@
                                 <div class="col-md-4">
                                     <div class="format-card bg-primary-soft rounded-4 p-4 text-center h-100">
                                         <span class="material-symbols-outlined fs-1 text-primary mb-3 d-block">psychology</span>
-                                        <h3 class="text-primary-custom fs-4 mb-3" data-key="format-feature-1-title">Практики</h3>
+                                        <h3 class="text-primary fs-4 mb-3" data-key="format-feature-1-title">Практики</h3>
                                         <p class="text-light fs-6 lh-base mb-0" data-key="format-feature-1-desc">Реальные упражнения для трансформации</p>
                                     </div>
                                 </div>
@@ -489,7 +496,7 @@
                                 <div class="col-md-4">
                                     <div class="format-card bg-primary-soft rounded-4 p-4 text-center h-100">
                                         <span class="material-symbols-outlined fs-1 text-primary mb-3 d-block">forum</span>
-                                        <h3 class="text-primary-custom fs-4 mb-3" data-key="format-feature-2-title">Закрытый чат</h3>
+                                        <h3 class="text-primary fs-4 mb-3" data-key="format-feature-2-title">Закрытый чат</h3>
                                         <p class="text-light fs-6 lh-base mb-0" data-key="format-feature-2-desc">Поддержка и общение с единомышленниками</p>
                                     </div>
                                 </div>
@@ -498,7 +505,7 @@
                                     <div class="format-card bg-module rounded-4 p-4 text-center h-100 border border-primary border-2 shadow-glow">
                                         <span class="material-symbols-outlined fs-1 text-primary mb-3 d-block">workspace_premium</span>
                                         <h3 class="text-light fs-4 mb-3" data-key="format-feature-3-title">Сертификат</h3>
-                                        <p class="text-primary-custom fs-6 lh-base fw-medium mb-0" data-key="format-feature-3-desc">Сертификат участника курса</p>
+                                        <p class="text-primary fs-6 lh-base fw-medium mb-0" data-key="format-feature-3-desc">Сертификат участника курса</p>
                                     </div>
                                 </div>
                             </div>
@@ -517,27 +524,27 @@
             <div class="col-md-4">
                 <div class="card h-100 text-center">
                     <div class="card-icon">
-                        <span class="material-symbols-outlined display-4 text-primary-custom">auto_awesome</span>
+                        <span class="material-symbols-outlined display-4 text-primary">auto_awesome</span>
                     </div>
-                    <h3 class="fw-normal text-primary-custom mb-3" data-key="about-card-1-title">Цифровая Родология</h3>
+                    <h3 class="fw-normal text-primary mb-3" data-key="about-card-1-title">Цифровая Родология</h3>
                     <p class="text-light" data-key="about-card-1-desc">Уникальная методика, объединяющая древние знания нумерологии с современными практиками трансформации.</p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card h-100 text-center">
                     <div class="card-icon">
-                        <span class="material-symbols-outlined display-4 text-primary-custom">target</span>
+                        <span class="material-symbols-outlined display-4 text-primary">target</span>
                     </div>
-                    <h3 class="fw-normal text-primary-custom mb-3" data-key="about-card-2-title">Индивидуальный подход</h3>
+                    <h3 class="fw-normal text-primary mb-3" data-key="about-card-2-title">Индивидуальный подход</h3>
                     <p class="text-light" data-key="about-card-2-desc">Каждая консультация уникальна и учитывает все аспекты вашей личности и жизненной ситуации.</p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card h-100 text-center">
                     <div class="card-icon">
-                        <span class="material-symbols-outlined display-4 text-primary-custom">diamond</span>
+                        <span class="material-symbols-outlined display-4 text-primary">diamond</span>
                     </div>
-                    <h3 class="fw-normal text-primary-custom mb-3" data-key="about-card-3-title">Глубинная работа</h3>
+                    <h3 class="fw-normal text-primary mb-3" data-key="about-card-3-title">Глубинная работа</h3>
                     <p class="text-light" data-key="about-card-3-desc">Работа на уровне подсознания для достижения устойчивых и глубоких изменений.</p>
                 </div>
             </div>
@@ -556,28 +563,28 @@
                 <div class="pricing-card bg-module rounded-4 p-4 position-relative overflow-hidden h-100">
                     <div class="position-absolute sparkle-pricing-1"></div>
                     <div class="position-relative z-3 h-100 d-flex flex-column">
-                        <span class="material-symbols-outlined display-3 text-primary-custom mb-3">workspace_premium</span>
-                        <h3 class="fw-bold text-primary-custom mb-2" data-key="pricing-basic-title">Basic</h3>
+                        <span class="material-symbols-outlined display-3 text-primary mb-3">workspace_premium</span>
+                        <h3 class="fw-bold text-primary mb-2" data-key="pricing-basic-title">Basic</h3>
                         <p class="text-light mb-3" data-key="pricing-basic-desc">Для личной трансформации</p>
                         <div class="mb-4">
-                            <div class="display-4 fw-bold text-primary-custom">250 <span class="fs-3">€</span></div>
+                            <div class="display-4 fw-bold text-primary">250 <span class="fs-3">€</span></div>
                         </div>
 
                         <ul class="list-unstyled mb-4 flex-grow-1">
                             <li class="text-light mb-2 ps-4 position-relative">
-                                <span class="material-symbols-outlined position-absolute start-0 text-primary-custom">check_circle</span>
+                                <span class="material-symbols-outlined position-absolute start-0 text-primary">check_circle</span>
                                 <span data-key="pricing-basic-item-1">5 модулей курса</span>
                             </li>
                             <li class="text-light mb-2 ps-4 position-relative">
-                                <span class="material-symbols-outlined position-absolute start-0 text-primary-custom">check_circle</span>
+                                <span class="material-symbols-outlined position-absolute start-0 text-primary">check_circle</span>
                                 <span data-key="pricing-basic-item-2">Видеоуроки</span>
                             </li>
                             <li class="text-light mb-2 ps-4 position-relative">
-                                <span class="material-symbols-outlined position-absolute start-0 text-primary-custom">check_circle</span>
+                                <span class="material-symbols-outlined position-absolute start-0 text-primary">check_circle</span>
                                 <span data-key="pricing-basic-item-3">Закрытый чат</span>
                             </li>
                             <li class="text-light mb-2 ps-4 position-relative">
-                                <span class="material-symbols-outlined position-absolute start-0 text-primary-custom">check_circle</span>
+                                <span class="material-symbols-outlined position-absolute start-0 text-primary">check_circle</span>
                                 <span data-key="pricing-basic-item-4">Сертификат участия</span>
                             </li>
                         </ul>
@@ -596,9 +603,9 @@
             <div class="col-lg-4 col-md-6">
                 <div class="pricing-card bg-module-premium rounded-4 p-4 position-relative overflow-hidden h-100 border border-primary border-3 bg-module">
                     <div class="position-relative z-3 h-100 d-flex flex-column">
-                        <span class="material-symbols-outlined display-3 text-primary-dark mb-3">school</span>
+                        <span class="material-symbols-outlined display-3 text-primary mb-3">school</span>
                         <h3 class="fw-bold text-light mb-2" data-key="pricing-pro-title">PRO</h3>
-                        <p class="text-primary-custom mb-3" data-key="pricing-pro-desc">Для специалистов</p>
+                        <p class="text-primary mb-3" data-key="pricing-pro-desc">Для специалистов</p>
                         <div class="mb-4">
                             <div class="display-4 fw-bold text-gradient-purple">420 <span class="fs-3">€</span></div>
                         </div>
@@ -629,7 +636,7 @@
                         <a href="https://secure.wayforpay.com/button/b3967602ec7b9"
                            target="_blank"
                            rel="noopener noreferrer"
-                           class="btn btn-primary-dark btn-lg w-100">
+                           class="btn btn-primary-custom btn-lg w-100">
                             <span data-key="pricing-pro-button">Выбрать</span>
                         </a>
                     </div>
@@ -641,28 +648,28 @@
                 <div class="pricing-card bg-module rounded-4 p-4 position-relative overflow-hidden h-100">
                     <div class="position-absolute sparkle-pricing-2"></div>
                     <div class="position-relative z-3 h-100 d-flex flex-column">
-                        <span class="material-symbols-outlined display-3 text-primary-custom mb-3">diamond</span>
-                        <h3 class="fw-bold text-primary-custom mb-2" data-key="pricing-master-title">MASTER</h3>
+                        <span class="material-symbols-outlined display-3 text-primary mb-3">diamond</span>
+                        <h3 class="fw-bold text-primary mb-2" data-key="pricing-master-title">MASTER</h3>
                         <p class="text-light mb-3" data-key="pricing-master-desc">Индивидуальный формат</p>
                         <div class="mb-4">
-                            <div class="display-4 fw-bold text-primary-custom">890 <span class="fs-3">€</span></div>
+                            <div class="display-4 fw-bold text-primary">890 <span class="fs-3">€</span></div>
                         </div>
 
                         <ul class="list-unstyled mb-4 flex-grow-1">
                             <li class="text-light mb-2 ps-4 position-relative">
-                                <span class="material-symbols-outlined position-absolute start-0 text-primary-custom">check_circle</span>
+                                <span class="material-symbols-outlined position-absolute start-0 text-primary">check_circle</span>
                                 <span data-key="pricing-master-item-1">Всё из PRO +</span>
                             </li>
                             <li class="text-light mb-2 ps-4 position-relative">
-                                <span class="material-symbols-outlined position-absolute start-0 text-primary-custom">check_circle</span>
+                                <span class="material-symbols-outlined position-absolute start-0 text-primary">check_circle</span>
                                 <span data-key="pricing-master-item-2">Сопровождение куратора</span>
                             </li>
                             <li class="text-light mb-2 ps-4 position-relative">
-                                <span class="material-symbols-outlined position-absolute start-0 text-primary-custom">check_circle</span>
+                                <span class="material-symbols-outlined position-absolute start-0 text-primary">check_circle</span>
                                 <span data-key="pricing-master-item-3">Супервизия + сертификат мастера</span>
                             </li>
                             <li class="text-light mb-2 ps-4 position-relative">
-                                <span class="material-symbols-outlined position-absolute start-0 text-primary-custom">check_circle</span>
+                                <span class="material-symbols-outlined position-absolute start-0 text-primary">check_circle</span>
                                 <span data-key="pricing-master-item-4">Разбор ваших кейсов</span>
                             </li>
                         </ul>
@@ -694,12 +701,12 @@
                 </div>
             </div>
             <div class="col-lg-7">
-                <h3 class="display-5 fw-normal text-primary-custom mb-4" data-key="author-name">Вероника Задорожная</h3>
+                <h3 class="display-5 fw-normal text-primary mb-4" data-key="author-name">Вероника Задорожная</h3>
                 <div class="bg-module rounded-4 p-4 p-md-5">
                     <p class="text-light fs-5 mb-4" data-key="author-description-1">
                         Цифровой психолог, основательница первой Школы Цифровой Психологии в Украине.
                     </p>
-                    <p class="text-primary-custom fs-5 mb-0">
+                    <p class="text-primary fs-5 mb-0">
                         <span data-key="author-description-2">Автор систем: </span><strong data-key="author-system-1">«Цифровая Кармология»</strong><span data-key="author-description-2"> и </span><strong data-key="author-system-2">«Цифровая Родология»</strong><span>.</span>
                     </p>
                 </div>
@@ -712,7 +719,7 @@
 <section id="contact" class="section py-5">
     <div class="container">
         <h2 class="section-title mb-4" data-key="contact-title">Остались вопросы?</h2>
-        <p class="text-center text-primary-custom fs-4 mb-5" data-key="contact-subtitle">
+        <p class="text-center text-primary fs-4 mb-5" data-key="contact-subtitle">
             Задайте их прямо сейчас, и мы свяжемся с вами
         </p>
         
@@ -721,15 +728,15 @@
                 <div class="bg-module rounded-4 p-4 p-md-5">
                     <form id="contactForm" class="row g-4">
                         <div class="col-12">
-                            <label class="form-label text-primary-custom fw-semibold" data-key="contact-name-label">Ваше имя</label>
+                            <label class="form-label text-primary fw-semibold" data-key="contact-name-label">Ваше имя</label>
                             <input type="text" name="name" class="form-control form-control-lg bg-dark-custom border-primary text-light" required>
                         </div>
                         <div class="col-12">
-                            <label class="form-label text-primary-custom fw-semibold" data-key="contact-email-label">Email</label>
+                            <label class="form-label text-primary fw-semibold" data-key="contact-email-label">Email</label>
                             <input type="email" name="email" class="form-control form-control-lg bg-dark-custom border-primary text-light" required>
                         </div>
                         <div class="col-12">
-                            <label class="form-label text-primary-custom fw-semibold" data-key="contact-message-label">Ваш вопрос</label>
+                            <label class="form-label text-primary fw-semibold" data-key="contact-message-label">Ваш вопрос</label>
                             <textarea name="message" rows="5" class="form-control form-control-lg bg-dark-custom border-primary text-light" required></textarea>
                         </div>
                         <div class="col-12 text-center">
@@ -755,30 +762,22 @@
     </div>
 </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h4 class="text-primary mb-4" data-key="footer-title">Цифровая Родология</h4>
-                    <p class="text-light" data-key="footer-name">Вероника Задорожная</p>
-                    <p class="text-light" data-key="footer-description">Мастер Цифровой Родологии</p>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <div class="footer-links">
-                        <a href="#" onclick="openModal('privacyModal')" data-key="footer-privacy">Политика конфиденциальности</a>
-                        <a href="#" onclick="openModal('termsModal')" data-key="footer-terms">Договор оферты</a>
-                        <a href="#" onclick="openModal('contactModal')" data-key="footer-contact">Контакты</a>
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-4">
-                <div class="col-12 text-center">
-                    <p class="text-light" data-key="footer-copyright">© 2025 Цифровая Родология. Все права защищены.</p>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 text-center">
+                <p class="text-primary mb-3" data-key="footer-copyright">
+                    © 2025 Цифровая Родология. Вероника Задорожная. Все права защищены.
+                </p>
+                <div class="footer-links">
+                    <a href="#" onclick="openModal('offerModal')" data-key="footer-offer">Публичная оферта</a>
+                    <a href="#" onclick="openModal('privacyModal')" data-key="footer-privacy">Политика конфиденциальности</a>
                 </div>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
 
     <!-- Modals -->
     <div id="privacyModal" class="modal">
