@@ -523,3 +523,55 @@ window.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const contactForm = document.getElementById('contactForm');
+    
+    if (contactForm) {
+        contactForm.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            // Получаем данные формы
+            const formData = new FormData(contactForm);
+            const formObject = {};
+            
+            // Преобразуем FormData в объект
+            for (let [key, value] of formData.entries()) {
+                formObject[key] = value;
+            }
+            
+            // Показываем loading state
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = 'Отправка...';
+            submitBtn.disabled = true;
+            
+            try {
+                // Отправляем данные на вебхук n8n
+                const response = await fetch('https://n8n.psyhodoc.xyz/webhook/num-rodolog', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(formObject)
+                });
+                
+                if (response.ok) {
+                    // Успешная отправка
+                    alert('Сообщение отправлено успешно! Мы свяжемся с вами в ближайшее время.');
+                    contactForm.reset(); // Очищаем форму
+                } else {
+                    throw new Error('Ошибка при отправке формы');
+                }
+                
+            } catch (error) {
+                console.error('Ошибка:', error);
+                alert('Произошла ошибка при отправке формы. Пожалуйста, попробуйте еще раз.');
+            } finally {
+                // Восстанавливаем кнопку
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            }
+        });
+    }
+});
