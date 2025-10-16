@@ -201,7 +201,8 @@ const translations = {
         // Contact section
         'contact-title': 'Остались вопросы?',
         'contact-subtitle': 'Задайте их прямо сейчас, и мы свяжемся с вами',
-        'contact-name-label': 'Ваше имя',
+        'contact-name-label': 'Ваше ФИО',
+        'contact-tg-label': 'Ваш @никнейм в телеграм (или номер телефона)',
         'contact-email-label': 'Email',
         'contact-message-label': 'Ваш вопрос',
         'contact-button': 'Отправить вопрос',
@@ -412,7 +413,8 @@ const translations = {
         // Contact section
         'contact-title': 'Залишились питання?',
         'contact-subtitle': 'Задайте їх прямо зараз, і ми зв\'яжемось з вами',
-        'contact-name-label': 'Ваше ім\'я',
+        'contact-name-label': 'Ваше ПІБ',
+        'contact-tg-label': 'Ваш @нікнейм в телеграм (або номер телефона)',
         'contact-email-label': 'Email',
         'contact-message-label': 'Ваше питання',
         'contact-button': 'Надіслати питання',

@@ -725,8 +725,12 @@
                 <div class="bg-module rounded-4 p-4 p-md-5">
                     <form id="contactForm" class="row g-4">
                         <div class="col-12">
-                            <label class="form-label text-primary fw-semibold" data-key="contact-name-label">Ваше имя</label>
+                            <label class="form-label text-primary fw-semibold" data-key="contact-name-label">Ваше ФИО</label>
                             <input type="text" name="name" class="form-control form-control-lg bg-dark-custom border-primary text-light" required>
+                        </div>
+                        <div class="col-12">
+                            <label class="form-label text-primary fw-semibold" data-key="contact-tg-label">Ваш @ник в телеграм (или номер телефона)</label>
+                            <input type="text" name="tg" class="form-control form-control-lg bg-dark-custom border-primary text-light" required>
                         </div>
                         <div class="col-12">
                             <label class="form-label text-primary fw-semibold" data-key="contact-email-label">Email</label>
@@ -734,7 +738,7 @@
                         </div>
                         <div class="col-12">
                             <label class="form-label text-primary fw-semibold" data-key="contact-message-label">Ваш вопрос</label>
-                            <textarea name="message" rows="5" class="form-control form-control-lg bg-dark-custom border-primary text-light" required></textarea>
+                            <textarea name="message" rows="5" class="form-control form-control-lg bg-dark-custom border-primary text-light"></textarea>
                         </div>
                         <div class="col-12 text-center">
                             <button type="submit" class="cta-button btn-lg px-5">
